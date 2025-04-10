@@ -3,10 +3,10 @@
 
   become: true
   tasks:
-    - name: Update APT package index
+    - name: Update apt package list
       apt:
         update_cache: yes
 
-    - name: Upgrade all packages to the latest version
+    - name: Upgrade all packages
       apt:
         upgrade: dist
